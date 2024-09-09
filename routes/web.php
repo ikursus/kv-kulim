@@ -1,12 +1,16 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\RegistrationController;
-use Illuminate\Support\Facades\Route;
 
 // Route::get(alamat, function);
 Route::get('/', HomeController::class);
+
+// Route::get(alamat, function);
+Route::get('/dashboard', DashboardController::class);
 
 // Route::get(alamat, function);
 // Route untuk paparkan borang registration

@@ -5,9 +5,11 @@
 <div class="card">
     <div class="card-body">
 
-        <form method="POST" action="login-data">
+        <form method="POST" class="form mt-5" action="/login-data">
 
             @csrf
+
+            <h3 class="text-center text-dark">Login</h3>
 
             <div class="mb-2">
                 <input type="text" name="email" class="form-control" placeholder="Email Anda">
@@ -22,7 +24,7 @@
             </button>
 
             <div class="mt-3 text-center">
-                Belum ada akaun? <a href="register">Register sekarang</a>
+                Belum ada akaun? <a href="register">Daftar sekarang</a>
             </div>
 
         </form>
